@@ -11,6 +11,26 @@
       content: counter(num)"-";
       counter-increment:num;
     }
+
+    .rank{
+      list-style:none;
+      padding:0;
+    }
+    .rank.best{
+      counter-reset:best;
+    }
+    .rank.best li:before{
+      content:"Best Seller 0" counter(best)" - ";
+      counter-increment: best;
+    }
+
+    .rank.steady{
+      counter-reset:steady
+    }
+    .rank.steady li:before{
+      content:counter(steady);
+      counter-increment:steady;
+    }
   </style>
 </head>
 <body>
