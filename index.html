@@ -42,6 +42,22 @@
     .rank.steady li.active:before{
       background-color:crimson;
     } 
+
+    .item{
+      list-style:none;
+      padding:0;
+      counter-reset:items;
+      line-height: 1.5em;
+    }
+    .item li:before{
+      content: '3.' counter(items);
+      counter-increment: itmes;
+      background-color:crimson;
+      color: #fff;
+      padding: 0 3px;
+      margin-right: 5px;
+      font-size: 12px;
+    }
   </style>
 </head>
 <body>
